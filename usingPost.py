@@ -1,3 +1,4 @@
+# include necessary package
 import requests
 from bs4 import BeautifulSoup
 
@@ -13,10 +14,11 @@ payload = {
 	'DiscountType':'68d9fc7b-7330-44c2-962a-74bc47d2ee8a'
 }
 
+# initial set
 res = requests.post("https://www.thsrc.com.tw/tw/TimeTable/SearchResult", data = payload)
 soup = BeautifulSoup(res.text,"html.parser")
 
-# print data
+# print data i need
 print("車次","行車時間","出發時間","抵達時間")
 for item in soup.select('.touch_table'):
 	print(item.select('.column1')[0].text," ", item.select('.column2')[0].text," ",item.select('.column3')[0].text," ", item.select('.column4')[0].text)
