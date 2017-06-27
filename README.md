@@ -1,7 +1,7 @@
 # Web-Crawler
 Using python3 and packages
-1. requests      : Get the source code of target web
-2. BeautifulSoup : Analysis and filter data
+1. requests       : Get the source code of target web
+2. BeautifulSoup4 : Analysis and filter data
 
 <hr>
 Following is my test file:
