@@ -28,5 +28,6 @@ for item in soup.select('.touch_table'):
 	goTime = item.select('.column3')[0].text
 	arriveTime = item.select('.column4')[0].text
 	file.write(train+"    "+needTime+"    "+goTime+"     "+arriveTime+"\n")
-
 	file.write("-------------------------------\n")
+
+file.close()
