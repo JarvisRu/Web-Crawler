@@ -37,8 +37,10 @@ Following is my test file:
   <li>Print the result / Save the resul into .txt file</li>
 </ol>
 
+<hr>
 
-<h3>bank.py</h3>
+<h3>bank</h3>
+<h4>bank.py</h4>
 <i>Need : pandas / lxml / html5lib / xlms / datetime</i>
 
 <i>Import : pandas / html5lib / datetime </i>
@@ -46,7 +48,37 @@ Following is my test file:
   <li>Get source code by <b>pandas.read_html</b></li>
   <li>Change data(table) into dataFrame from <a href="http://rate.bot.com.tw/xrt?Lang=zh-TW">Foreign Exchage Rate</a></li>
   <li>Get the data I select into new table</li>
-  <li>Save the reuslt into excel file</li>
+  <li>Save the reuslt and time now into excel file</li>
 </ol>
+
+<h4>bank_USD.py</h4>
+<i>Need : pandas / lxml / html5lib / xlms / datetime</i>
+
+<i>Import : pandas / html5lib / datetime </i>
+<ol>
+  <li>Get source code by <b>pandas.read_html</b></li>
+  <li>Change data(table) into dataFrame from <a href="http://rate.bot.com.tw/xrt?Lang=zh-TW">Foreign Exchage Rate</a></li>
+  <li>Get the USD data into new table</li>
+  <li>Save the reuslt and time now into <b>USD.txt</b> (By append)</li>
+  <li>Read:
+    <ul>
+      <li>Read all</li>
+      <li>Read particular line</li>
+      <li>Read particular data</li>
+    </ul>
+  </li>
+</ol>
+
+<h4>bank_mail.py</h4>
+
+<i>Import : smtplib / MIMEMultipart / MIMEText </i>
+
+<ol>
+  <li>Read data from <b>USD.txt</b></li><li>If the <i>現金匯率-本行賣出"(sell1)</i>  lower than <i>Hit_Price</i></li><li>Send an email to "toAddr" to inform that it's the buying timing</li>
+</ol>
+<i>Remember to set fromAddress and fromPassword</i>
+   
+
+
 
   
