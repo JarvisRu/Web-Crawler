@@ -4,9 +4,9 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 # set mail information
-fromAddr = 'dar58896123@gmail.com'
-fromPass = 'z040258896'
-toAddr   = 'tony320cindy@gmail.com'
+fromAddr = ''
+fromPass = ''
+toAddr   = ''
 msg = MIMEMultipart()
 msg['From']		= fromAddr
 msg['To']		= toAddr
@@ -19,7 +19,7 @@ last = line[-1]
 sell1Num = float(last[15:23])
 
 # set your Hit_price
-Hit_price = 30.62
+Hit_price = 
 # set if lower than Hit_price then send mail
 if sell1Num < Hit_price:
 	msg.attach(MIMEText(line[-1]+'\n低於 '+str(Hit_price),'plain'))
