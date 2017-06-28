@@ -21,7 +21,7 @@ Following is my test file:
 </ol>
 
 
-<h3>usingPost.py</h3>
+<h3>usingPost.py / usingPost2.py</h3>
 <i>Need : requests / BeautifulSoup4</i>
 
 <i>Import : requests / BeautifulSoup4</i>
@@ -34,6 +34,7 @@ Following is my test file:
     <li>Estimated Time of Departure</li>
     <li>Estimated Time of Arrived</li>
   </ul></li>
+  <li>Print the result / Save the resul into .txt file</li>
 </ol>
 
 
@@ -45,7 +46,7 @@ Following is my test file:
   <li>Get source code by <b>pandas.read_html</b></li>
   <li>Change data(table) into dataFrame from <a href="http://rate.bot.com.tw/xrt?Lang=zh-TW">Foreign Exchage Rate</a></li>
   <li>Get the data I select into new table</li>
-  <li>Save the reuslt in excel file</li>
+  <li>Save the reuslt into excel file</li>
 </ol>
 
   
